@@ -1,0 +1,29 @@
+:root {
+
+   --body-bg : #facfac;
+   --body-color: #555;
+   --font-size: 1.4rem;
+   --link-color : #325ebd;
+   --link-color-hover: #bfe0f0;
+
+
+}
+
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-size: var(--font-size);
+}
+
+a {
+
+color: #2a2c8a;
+text-decoration: none;
+
+    &:hover{
+        color: #006600;
+        
+    }
+
+}

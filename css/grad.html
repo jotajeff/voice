@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente GPT</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+
+
+        .box-degrade {
+            /*  background: linear-gradient(90deg, #00008b, #87cefa); */ 
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(45deg,  #00008b, #87cefa , #200e0a );
+            background-size: 500% 100%;
+            animation: degrade-animate 5s  infinite alternate ease-in-out;
+        }
+
+        .box-degrade h1 {
+            color: aliceblue;
+            font-weight: lighter;
+        }
+
+        @keyframes degrade-animate{
+            0% {
+                background-position: 0%;
+            }
+            100%{
+                background-position: 100%;
+            }
+        }
+
+        .myDiv {
+            width: 50%;
+            height: 50%;
+            background-color: #200e0a;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box-degrade">
+
+            <div class="myDiv">
+
+                <h1>Gradiente GPT</h1>
+                <h1>Gradiente GPT</h1>
+                <h1>Gradiente GPT</h1>
+                <h1>Gradiente GPT</h1>
+                <h1>Gradiente GPT</h1>
+                <h1>Gradiente GPT</h1>
+                <h1>Gradiente GPT</h1>
+
+
+            </div>
+
+    </div>
+    
+</body>
+</html>
